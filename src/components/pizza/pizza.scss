@@ -1,0 +1,43 @@
+.trattoria-pizza {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.trattoria-pizza img {
+  width: 12rem;
+  aspect-ratio: 1;
+  align-self: start;
+}
+
+.trattoria-pizza div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.4rem 0;
+}
+
+.trattoria-pizza h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.trattoria-pizza p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: auto;
+}
+
+.trattoria-pizza span {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.trattoria-pizza.sold-out {
+  color: #888;
+}
+
+.trattoria-pizza.sold-out img {
+  //   filter: grayscale();
+  opacity: 0.8;
+}

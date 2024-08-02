@@ -1,5 +1,12 @@
+import "./header.scss";
+
 const Header = () => {
-  return <p>Test</p>;
+  return (
+    <>
+      <header className="trattoria-header"></header>
+      <h1>Trattoria di Nelson</h1>
+    </>
+  );
 };
 
 export default Header;

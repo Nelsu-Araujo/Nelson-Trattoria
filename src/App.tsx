@@ -1,13 +1,16 @@
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Menu from "./components/menu/menu";
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Menu />
-      <Footer />
+      <div className="trattoria-container">
+        <Header />
+        <Menu />
+        <Footer />
+      </div>
     </>
   );
 };
