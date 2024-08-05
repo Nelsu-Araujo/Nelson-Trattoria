@@ -2,11 +2,8 @@
   align-self: stretch;
 }
 
-.trattoria-header h1 {
-  /* Non-accessible color */
-  color: #edc84b;
-  /* color: #af8602; */
-
+h1 {
+  color: #af8602;
   text-transform: uppercase;
   text-align: center;
   font-size: 5.2rem;
@@ -17,21 +14,20 @@
   display: block;
 }
 
-.trattoria-header h1::before,
-.trattoria-header h1::after {
+h1::before,
+h1::after {
   display: block;
   content: "";
   height: 3px;
   width: 4rem;
-  background-color: #edc84b;
+  background-color: #af8602;
   position: absolute;
   top: calc(50% - 1px);
 }
-
-.trattoria-header h1::before {
+h1::before {
   left: 0;
 }
 
-.trattoria-header h1::after {
+h1::after {
   right: 0;
 }

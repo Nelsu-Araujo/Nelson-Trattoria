@@ -14,7 +14,7 @@ const Menu = () => {
           <p>
             Authentic Italian cuisine. Treat yourself with 6 fantastic and
             classic Italian pizzas. All from our stone oven, all organic, all
-            delicious
+            delicious.
           </p>
 
           <ul className="trattoria-pizzas">
