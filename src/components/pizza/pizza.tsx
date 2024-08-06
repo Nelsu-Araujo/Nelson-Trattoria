@@ -1,4 +1,6 @@
+import { useState } from "react";
 import "./pizza.scss";
+import { fetchCocktail } from "../../cocktail-api-call/cocktail-api-call";
 
 export type PizzaProps = {
   name: string;
@@ -15,15 +17,44 @@ const Pizza = ({
   photoName,
   soldOut,
 }: PizzaProps) => {
+  const [cocktail, setCocktail] = useState<any | null>(null);
+  const [viewingCocktail, setViewingCocktail] = useState(false);
+
+  const handleClick = async () => {
+    if (!cocktail) {
+      const cocktailData = await fetchCocktail();
+      setCocktail(cocktailData);
+    }
+    setViewingCocktail(!viewingCocktail);
+  };
+
   return (
     <>
       <li className={`trattoria-pizza ${soldOut ? "sold-out" : ""}`}>
-        <img src={photoName} alt={name} />
-        <div>
-          <h3>{name}</h3>
-          <p>{ingredients}</p>
-          <span>{soldOut ? "SOLD OUT" : price}</span>
-        </div>
+        {viewingCocktail ? (
+          <>
+            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+            <div className="cocktail-info">
+              <h3>{cocktail.strDrink}</h3>
+              <p>{cocktail.strInstructions}</p>
+              <button onClick={handleClick} className="return-button">
+                Return to Pizza
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <img src={photoName} alt={name} />
+            <div>
+              <h3>{name}</h3>
+              <p>{ingredients}</p>
+              <p className="cocktail-link" onClick={handleClick}>
+                Cocktail to go with it
+              </p>
+              <span>{soldOut ? "SOLD OUT" : `€${price}`}</span>
+            </div>
+          </>
+        )}
       </li>
     </>
   );

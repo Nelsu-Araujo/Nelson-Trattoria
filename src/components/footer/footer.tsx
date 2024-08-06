@@ -19,8 +19,8 @@ const Footer = () => {
           We're happy to welcome you between {openHour}:00 and {closeHour}:00.
         </p>
         <p className="trattoria-copyright">
-          Developed with <img src="../assets/images/heart.png" alt="heart" /> ©
-          2024 | Nelson Barbosa | All Rights Reserved
+          Developed with <img src="../../assets/images/heart.png" alt="heart" />{" "}
+          © 2024 | Nelson Barbosa | All Rights Reserved
         </p>
       </>
     );
