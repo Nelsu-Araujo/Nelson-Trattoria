@@ -4,25 +4,25 @@
 
 h1 {
   color: #af8602;
-  text-transform: uppercase;
-  text-align: center;
+  display: block;
   font-size: 5.2rem;
   font-weight: 300;
   letter-spacing: 3px;
   position: relative;
+  text-align: center;
+  text-transform: uppercase;
   width: 100%;
-  display: block;
 }
 
 h1::before,
 h1::after {
-  display: block;
-  content: "";
-  height: 3px;
-  width: 4rem;
   background-color: #af8602;
+  content: "";
+  display: block;
+  height: 3px;
   position: absolute;
   top: calc(50% - 1px);
+  width: 4rem;
 }
 h1::before {
   left: 0;

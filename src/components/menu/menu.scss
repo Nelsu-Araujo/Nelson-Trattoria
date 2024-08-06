@@ -1,31 +1,31 @@
 .trattoria-menu {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 5rem;
 }
 
 .trattoria-menu h2 {
-  display: inline-block;
-  padding: 1rem 0;
-  border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  display: inline-block;
   font-size: 2.4rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
   font-weight: 500;
+  letter-spacing: 3px;
+  padding: 1rem 0;
+  text-transform: uppercase;
 }
 
 .trattoria-menu > p {
   font-size: 1.5rem;
-  text-align: center;
   line-height: 1.6;
+  text-align: center;
   width: 80%;
 }
 
 .trattoria-pizzas {
-  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
 }

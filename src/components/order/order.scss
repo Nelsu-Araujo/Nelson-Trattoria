@@ -1,19 +1,19 @@
 .trattoria-order {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2.4rem;
 }
 
 .btn {
-  color: inherit;
-  font-family: inherit;
+  background-color: #af8702b4;
   border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 1.4rem;
   font-weight: 500;
-  background-color: #af8702b4;
   padding: 1.4rem 3.2rem;
-  cursor: pointer;
   transition: all 0.2s;
 }
 

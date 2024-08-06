@@ -5,9 +5,9 @@
 }
 
 .trattoria-pizza img {
-  width: 12rem;
-  aspect-ratio: 1;
   align-self: start;
+  aspect-ratio: 1;
+  width: 12rem;
 }
 
 .trattoria-pizza div {
@@ -43,8 +43,8 @@
 
 .trattoria-pizza p {
   font-size: 1.4rem;
-  font-weight: 300;
   font-style: italic;
+  font-weight: 300;
   margin-bottom: auto;
 }
 
@@ -62,16 +62,16 @@
 }
 
 .cocktail-link {
+  color: #af8602;
   cursor: pointer;
   text-decoration: underline;
-  color: #af8602;
 }
 
 .return-button {
-  width: 50%;
+  cursor: pointer;
   font-family: "Roboto Mono", sans-serif;
   font-size: 1rem;
   font-style: italic;
   font-weight: 300;
-  cursor: pointer;
+  width: 50%;
 }
