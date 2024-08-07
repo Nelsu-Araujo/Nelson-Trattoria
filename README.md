@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Welcome to Trattoria di Nelson! In this project, developed with the React JS framework, you'll find the menu for an Italian pizzeria.
 
-## Libraries and technologies used:
+## Libraries and technologies used
 
 ### Core Technologies
 
